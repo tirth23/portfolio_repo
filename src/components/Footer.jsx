@@ -7,14 +7,14 @@ const Footer = () => {
 	return (
 		<div className="mb-8 mt-20">
 			<div className="flex items-center justify-center">
-				<motion.img
+				<motion.span
 					initial={{ opacity: 0 }}
 					whileInView={{ opacity: 1 }}
 					transition={{ duration: 0.5 }}
-					src={logo}
-					width={200}
-					className="my-20"
-				/>
+					className="my-20 bg-gradient-to-r from-purple-800 via-blue-800 to-pink-800 bg-clip-text text-transparent text-2xl font-bold"
+				>
+          SOCIAL LINKS
+        </motion.span>
 			</div>
 			<div className="flex items-center justify-center gap-8">
 				{SOCIAL_MEDIA_LINKS.map((link, index) => (
@@ -32,7 +32,7 @@ const Footer = () => {
 				))}
 			</div>
 			<p className="mt-8 text-center text-sm tracking-wide text-gray-400">
-				&copy;compileTab. All rights reserved.
+				&copy;TirthPatel. All rights reserved.
 			</p>
 		</div>
 	);

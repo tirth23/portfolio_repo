@@ -27,6 +27,11 @@ const Bio = () => {
 						className="mb-4 text-lg lg:text-xl"
 					>
 						{bio}
+						{index === BIO.length - 1 ? (
+							<a href="https://www.accenture.com/in-en/insights/accenture-invest-3-billion-ai-accelerate-clients-reinvention" className="underline">
+								AI&nbsp;Navigator.
+							</a>
+						) : null}
 					</motion.p>
 				))}
 			</motion.div>

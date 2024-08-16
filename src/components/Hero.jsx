@@ -1,6 +1,6 @@
 import React from "react";
 import { HERO } from "../constants";
-import carlImg from "../assets/carl.jpeg";
+import heroImg from "../assets/heroImg.png";
 import { motion } from "framer-motion";
 
 const Hero = () => {
@@ -31,7 +31,7 @@ const Hero = () => {
 						initial={{ opacity: 0 }}
 						animate={{ opacity: 1 }}
 						transition={{ duration: 1 }}
-						src={carlImg}
+						src={heroImg}
 						width={550}
 						height={550}
 						alt="carl-img"

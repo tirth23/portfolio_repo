@@ -33,7 +33,11 @@ const Navbar = () => {
 					<div className="flex justify-between items-center gap-6">
 						<div>
 							<a href="#">
-								<img src={logo} alt="logo" width={150} />
+								<span
+									className="bg-gradient-to-r from-purple-800 via-blue-800 to-pink-800 bg-clip-text text-transparent text-2xl font-bold" 
+								>
+									TIRTH PATEL
+								</span>
 							</a>
 						</div>
 						<div>
