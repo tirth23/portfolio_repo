@@ -1,5 +1,4 @@
 import React from "react";
-import logo from "../assets/logo.png";
 import { SOCIAL_MEDIA_LINKS } from "../constants";
 import { motion } from "framer-motion";
 

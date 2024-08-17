@@ -10,7 +10,7 @@ const Background = () => {
 				initial={{ opacity: 0, scale: 0.8 }}
 				animate={{ opacity: 1, scale: 1 }}
 				transition={{ duration: 1 }}
-				className="w-screen h-screen absolute"
+				className="w-full h-screen absolute"
 			>
 				<div className="flex justify-end h-full w-full relative md:w-[60%] ml-auto">
 					<motion.img
