@@ -75,10 +75,10 @@ const Navbar = () => {
 				</div>
 				{/* Mobile Menu */}
 				<div className="rounded-lg backdrop-blur-md md:hidden">
-					<div className="flex items-center justify-between">
+					<div className="flex items-center justify-between p-4">
 						<div>
 							<a href="#">
-								<span className="bg-gradient-to-r from-purple-800 via-blue-800 to-pink-800 bg-clip-text text-transparent text-2xl font-bold p-2">
+								<span className="bg-gradient-to-r from-purple-800 via-blue-800 to-pink-800 bg-clip-text text-transparent text-3xl font-bold p-2">
 									TIRTH PATEL
 								</span>
 							</a>
@@ -97,17 +97,17 @@ const Navbar = () => {
 						</div>
 					</div>
 					{isMobileMenuOpen && (
-						<ul className="ml-4 mt-4 flex flex-col gap-4 backdrop-blur-md">
+						<ul className="p-4 flex flex-col gap-4 backdrop-blur-lg text-2xl">
 							{NAVIGATION_LINKS.map((item, index) => (
 								<li key={index}>
-									{/* <a
+									<a
 										className="block w-full text-lg"
 										href={item.href}
 										onClick={(e) => handleLinkClick(e, item.href)}
 									>
 										{item.label}
-									</a> */}
-									<a
+									</a>
+									{/* <a
 											className="text-sm hover:text-yellow-400"
 											href={item.href}
 											download={
@@ -121,7 +121,7 @@ const Navbar = () => {
 											}
 										>
 											{item.label}
-										</a>
+										</a> */}
 								</li>
 							))}
 						</ul>
