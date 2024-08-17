@@ -11,9 +11,13 @@ const Navbar = () => {
 
 	const handleLinkClick = (e, href) => {
 		e.preventDefault();
+		if (href === "/Tirth_Patel_Resume.pdf") {
+			window.open(href, "_blank");
+			return;
+		}
 		const targetElement = document.querySelector(href);
 		if (targetElement) {
-			const offset = -85;
+			const offset = -48;
 			const elementPosition = targetElement.getBoundingClientRect().top;
 			const offsetPosition = elementPosition + window.scrollY + offset;
 			window.scrollTo({
@@ -41,6 +45,13 @@ const Navbar = () => {
 							<ul className="flex items-center gap-4">
 								{NAVIGATION_LINKS.map((item, index) => (
 									<li key={index}>
+										{/* <a
+											className="text-sm hover:text-yellow-400"
+											href={item.href}
+											onClick={(e) => handleLinkClick(e, item.href)}
+										>
+											{item.label}
+										</a> */}
 										<a
 											className="text-sm hover:text-yellow-400"
 											href={item.href}
@@ -89,13 +100,28 @@ const Navbar = () => {
 						<ul className="ml-4 mt-4 flex flex-col gap-4 backdrop-blur-md">
 							{NAVIGATION_LINKS.map((item, index) => (
 								<li key={index}>
-									<a
+									{/* <a
 										className="block w-full text-lg"
 										href={item.href}
 										onClick={(e) => handleLinkClick(e, item.href)}
 									>
 										{item.label}
-									</a>
+									</a> */}
+									<a
+											className="text-sm hover:text-yellow-400"
+											href={item.href}
+											download={
+												item.href === "/Tirth_Patel_Resume.pdf" &&
+												"Tirth_Patel_Resume.pdf"
+											}
+											onClick={(e) =>
+												item.href === "/Tirth_Patel_Resume.pdf"
+													? null
+													: handleLinkClick(e, item.href)
+											}
+										>
+											{item.label}
+										</a>
 								</li>
 							))}
 						</ul>
