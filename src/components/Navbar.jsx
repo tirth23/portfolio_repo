@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import { NAVIGATION_LINKS } from "../constants/index.jsx";
 import { FaBars, FaTimes } from "react-icons/fa";
 
