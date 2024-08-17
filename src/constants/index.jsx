@@ -38,7 +38,7 @@ export const NAVIGATION_LINKS = [
 	{ label: "Work Experience", href: "#work" },
 	{ label: "Education", href: "#education" },
 	{ label: "Contact", href: "#contact" },
-  { label: "View Resume", href: "../assets/Tirth_Patel_Resume.pdf" },
+  { label: "View Resume", href: "/Tirth_Patel_Resume.pdf" },
 ];
 
 export const HERO = {

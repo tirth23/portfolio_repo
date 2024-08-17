@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import logo from "../assets/logo.png";
+import { useState } from "react";
 import { NAVIGATION_LINKS } from "../constants/index.jsx";
 import { FaBars, FaTimes } from "react-icons/fa";
 
@@ -45,9 +44,12 @@ const Navbar = () => {
 										<a
 											className="text-sm hover:text-yellow-400"
 											href={item.href}
-                      download={"Tirth_Patel_Resume.pdf"}
+											download={
+												item.href === "/Tirth_Patel_Resume.pdf" &&
+												"Tirth_Patel_Resume.pdf"
+											}
 											onClick={(e) =>
-												item.href === "../assets/Tirth_Patel_Resume.pdf"
+												item.href === "/Tirth_Patel_Resume.pdf"
 													? null
 													: handleLinkClick(e, item.href)
 											}
