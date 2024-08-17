@@ -25,19 +25,16 @@ const Projects = () => {
 						className="group relative overflow-hidden rounded-3xl"
 					>
 						<motion.img
-							whileHover={{ scale: 1.1 }}
 							src={project.image}
 							alt={project.name}
-							className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
+							className="h-full w-full object-cover transition-transform"
+              
 						/>
-						<motion.h3
-							initial={{ transform: "translateY(0%)" }}
-							whileHover={{ transform: "translateY(10px)" }}
-							transition={{ duration: 0.5 }}
+						<h3
 							className="m-auto text-3xl font-bold absolute inset-0 flex flex-col items-center justify-center text-white bg-black bg-opacity-30"
 						>
 							{project.name}
-						</motion.h3>
+						</h3>
 						<motion.div
 							initial={{ opacity: 0 }}
 							whileHover={{ opacity: 1 }}
