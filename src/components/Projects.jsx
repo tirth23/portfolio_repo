@@ -16,23 +16,23 @@ const Projects = () => {
 			</motion.h2>
 			<div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
 				{PROJECTS.map((project) => (
-					<motion.div
+					<motion.a
 						initial={{ opacity: 0, scale: 0.9 }}
 						whileInView={{ opacity: 1, scale: 1 }}
 						transition={{ duration: 0.5 }}
 						whileHover={{ scale: 1.05 }}
 						key={project.id}
 						className="group relative overflow-hidden rounded-3xl"
+						href={project.githubLink}
+						target="_blank"
+						rel="noopener noreferrer"
 					>
 						<motion.img
 							src={project.image}
 							alt={project.name}
 							className="h-full w-full object-cover transition-transform"
-              
 						/>
-						<h3
-							className="m-auto text-3xl font-bold absolute inset-0 flex flex-col items-center justify-center text-white bg-black bg-opacity-30"
-						>
+						<h3 className="m-auto text-3xl font-bold absolute inset-0 flex flex-col items-center justify-center text-white bg-black bg-opacity-30">
 							{project.name}
 						</h3>
 						<motion.div
@@ -56,7 +56,7 @@ const Projects = () => {
 								</div>
 							</a>
 						</motion.div>
-					</motion.div>
+					</motion.a>
 				))}
 			</div>
 		</section>

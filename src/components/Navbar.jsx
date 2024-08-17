@@ -45,14 +45,15 @@ const Navbar = () => {
 							<ul className="flex items-center gap-4">
 								{NAVIGATION_LINKS.map((item, index) => (
 									<li key={index}>
-										{/* <a
+										<a
 											className="text-sm hover:text-yellow-400"
 											href={item.href}
 											onClick={(e) => handleLinkClick(e, item.href)}
 										>
 											{item.label}
-										</a> */}
-										<a
+										</a>
+                    {/* for directly downloading the resume */}
+										{/* <a
 											className="text-sm hover:text-yellow-400"
 											href={item.href}
 											download={
@@ -66,7 +67,7 @@ const Navbar = () => {
 											}
 										>
 											{item.label}
-										</a>
+										</a> */}
 									</li>
 								))}
 							</ul>
@@ -75,7 +76,7 @@ const Navbar = () => {
 				</div>
 				{/* Mobile Menu */}
 				<div className="rounded-lg backdrop-blur-md md:hidden">
-					<div className="flex items-center justify-between p-4">
+					<div className="flex items-center justify-between pl-3 pr-3">
 						<div>
 							<a href="#">
 								<span className="bg-gradient-to-r from-purple-800 via-blue-800 to-pink-800 bg-clip-text text-transparent text-3xl font-bold p-2">
@@ -97,7 +98,7 @@ const Navbar = () => {
 						</div>
 					</div>
 					{isMobileMenuOpen && (
-						<ul className="p-4 flex flex-col gap-4 backdrop-blur-lg text-2xl">
+						<ul className="pl-6 pr-6 pb-4 pt-4 flex flex-col gap-4 backdrop-blur-lg text-2xl">
 							{NAVIGATION_LINKS.map((item, index) => (
 								<li key={index}>
 									<a
@@ -107,6 +108,7 @@ const Navbar = () => {
 									>
 										{item.label}
 									</a>
+                  {/* for directly downloading the resume */}
 									{/* <a
 											className="text-sm hover:text-yellow-400"
 											href={item.href}
