@@ -38,11 +38,12 @@ export const NAVIGATION_LINKS = [
 	{ label: "Work Experience", href: "#work" },
 	{ label: "Education", href: "#education" },
 	{ label: "Contact", href: "#contact" },
+  { label: "View Resume", href: "../assets/Tirth_Patel_Resume.pdf" },
 ];
 
 export const HERO = {
-	name: "TIRTH PATEL",
-	greet: "Hello there! 👋🏻",
+	name: "Tirth Patel",
+	greet: "Hello there!",
 	description:
 		"I am passionate Software Developer skilled in crafting robust, user-centric web applications. With a focus on continuous learning and innovation, I deliver high-quality solutions that elevate user experiences and drive business growth.",
 };
@@ -151,12 +152,12 @@ export const SKILLS = [
   {
 		icon: <SiRedux  className="text-4xl text-[#764abc] lg:text-5xl" />,
 		name: "Redux",
-		experience: "1+ years",
+		experience: "1+ year",
 	},
   {
 		icon: <FaNodeJs className="text-4xl text-green-600 lg:text-5xl" />,
 		name: "Node.js",
-		experience: "1+ years",
+		experience: "1+ year",
 	},
 	{
 		icon: <SiMysql className="text-4xl text-sky-500 lg:text-5xl" />,
@@ -166,12 +167,12 @@ export const SKILLS = [
   {
 		icon: <SiMongodb className="text-4xl text-green-600 lg:text-5xl" />,
 		name: "MongoDB",
-		experience: "1+ years",
+		experience: "1+ year",
 	},
   {
 		icon: <FaJava className="text-4xl text-white lg:text-5xl" />,
 		name: "Core Java",
-		experience: "1+ years",
+		experience: "1+ year",
 	},
   {
 		icon: <FaGit  className="text-4xl text-[#f14e32] lg:text-5xl" />,
