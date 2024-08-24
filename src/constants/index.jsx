@@ -32,13 +32,13 @@ import { FaJava } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
 
 export const NAVIGATION_LINKS = [
-	{ label: "Projects", href: "#projects" },
 	{ label: "Bio", href: "#bio" },
-	{ label: "Skills", href: "#skills" },
 	{ label: "Work Experience", href: "#work" },
+	{ label: "Skills", href: "#skills" },
+	{ label: "Projects", href: "#projects" },
 	{ label: "Education", href: "#education" },
 	{ label: "Contact", href: "#contact" },
-  { label: "Resume", href: "/Tirth_Patel_Resume.pdf" },
+	{ label: "Resume", href: "/Tirth_Patel_Resume.pdf" },
 ];
 
 export const HERO = {
@@ -104,7 +104,7 @@ export const PROJECTS = [
 
 export const BIO = [
 	"A versatile Software Developer with an eye for design, I expertly merge technical expertise with creative vision to craft exceptional digital experiences. Driven by a passion for continuous learning, I am dedicated to exploring emerging technologies and pushing the boundaries of frontend development.",
-  "With a robust foundation in HTML, CSS, and JavaScript, complemented by expertise in modern frameworks like React.js, I excel in delivering high-performance, visually stunning web applications that seamlessly align with user needs and business objectives.",
+	"With a robust foundation in HTML, CSS, and JavaScript, complemented by expertise in modern frameworks like React.js, I excel in delivering high-performance, visually stunning web applications that seamlessly align with user needs and business objectives.",
 	"Currently, I am contributing to the world's largest IT company, Accenture, as a Software Engineer. My work involves harnessing cutting-edge technologies to drive innovation and deliver exceptional user experiences. I play a pivotal role in developing frontend and maintaining Accenture leading GenAI product ",
 ];
 
@@ -119,42 +119,42 @@ export const SKILLS = [
 		name: "JavaScript",
 		experience: "3+ years",
 	},
-  {
+	{
 		icon: <BiLogoTypescript className="text-4xl text-sky-500 lg:text-5xl" />,
 		name: "TypeScript",
 		experience: "3+ years",
 	},
-  {
+	{
 		icon: <FaHtml5 className="text-4xl text-orange-500 lg:text-5xl" />,
 		name: "HTML",
 		experience: "3+ years",
 	},
-  {
+	{
 		icon: <IoLogoCss3 className="text-4xl text-sky-400 lg:text-5xl" />,
 		name: "CSS",
 		experience: "3+ years",
 	},
-  {
-		icon: <SiSass  className="text-4xl text-pink-300 lg:text-5xl" />,
+	{
+		icon: <SiSass className="text-4xl text-pink-300 lg:text-5xl" />,
 		name: "SCSS",
 		experience: "3+ years",
 	},
-  {
-		icon: <RiTailwindCssFill   className="text-4xl text-sky-300 lg:text-5xl" />,
+	{
+		icon: <RiTailwindCssFill className="text-4xl text-sky-300 lg:text-5xl" />,
 		name: "Tailwind CSS",
 		experience: "3+ years",
 	},
-  {
-		icon: <SiHandlebarsdotjs  className="text-4xl text-white lg:text-5xl" />,
+	{
+		icon: <SiHandlebarsdotjs className="text-4xl text-white lg:text-5xl" />,
 		name: "Handlebar.js",
 		experience: "3+ years",
 	},
-  {
-		icon: <SiRedux  className="text-4xl text-[#764abc] lg:text-5xl" />,
+	{
+		icon: <SiRedux className="text-4xl text-[#764abc] lg:text-5xl" />,
 		name: "Redux",
 		experience: "1+ year",
 	},
-  {
+	{
 		icon: <FaNodeJs className="text-4xl text-green-600 lg:text-5xl" />,
 		name: "Node.js",
 		experience: "1+ year",
@@ -164,27 +164,27 @@ export const SKILLS = [
 		name: "MySQL",
 		experience: "1+ year",
 	},
-  {
+	{
 		icon: <SiMongodb className="text-4xl text-green-600 lg:text-5xl" />,
 		name: "MongoDB",
 		experience: "1+ year",
 	},
-  {
+	{
 		icon: <FaJava className="text-4xl text-white lg:text-5xl" />,
 		name: "Core Java",
 		experience: "1+ year",
 	},
-  {
-		icon: <FaGit  className="text-4xl text-[#f14e32] lg:text-5xl" />,
+	{
+		icon: <FaGit className="text-4xl text-[#f14e32] lg:text-5xl" />,
 		name: "Git",
 		experience: "3+ years",
 	},
-  {
+	{
 		icon: <FaGithub className="text-4xl text-white lg:text-5xl" />,
 		name: "Github",
 		experience: "3+ years",
 	},
-  {
+	{
 		icon: <SiJira className="text-4xl text-sky-500 lg:text-5xl" />,
 		name: "JIRA",
 		experience: "3+ years",
@@ -196,15 +196,42 @@ export const EXPERIENCES = [
 		title: "Software Engineer",
 		company: "Accenture",
 		duration: "July 2021 - Present",
-		description:
-			"As the Frontend Developer, I spearheaded the development of advanced web applications using cutting-edge technologies like React, websocket, radixUI and TypeScript. I worked closely with cross-functional teams, including designers, product managers, and backend developers, to deliver seamless and high-performance user experiences.",
+		description: `<div>Client: GMA</div>
+    <ul style="list-style-type:disc">
+        <li>Played a pivotal role in developing the Generative Market Analysis (GMA) product which is part of Accenture&apos;s 
+        Gen AI capabiilty, enabling Oracle Cloud Infrastructure with real-time market research updates, executive strategy briefings, 
+        and on-demand strategic insights.</li>
+        <li>Spearheaded the front-end development of a high-performance, responsive UI for the GMA tool using React.js and TypeScript, 
+        that helped leadership enhance proposal initiation and project execution by providing tailored growth strategies through detailed 
+        data analysis to address specific client needs.</li>
+        <li>Optimized application performance through the strategic implementation of lazy loading, code splitting, custom react hooks, 
+        resulting in a substantial 30&#37; improvement in initial load time, ensuring a seamless user experience and enhancing 
+        user engagement.</li>
+        <li>Integrated Nivo network graphs based on D3.js for enhanced data-driven insights on industry trends and
+        sources, which help reduced decision making time for leadership by 20&#37;.</li>
+        <li>Developed reusable UI components adhering to WCAG 2 Level AA accessibility standards and BEM methodology using 
+        semantic HTML, CSS, JavaScript contributing to a more inclusive product and reducing code maintenance time.</li>
+        <li> Developed a component tracing feature in the Fabricator UI toolkit, enabling identification of 300+ components 
+        across 100+ pages, reducing search time by 25&#37;  and streamlining team workflows.</li>
+        <li>Collaborated with backend team to implement a real-time data communication system using WebSocket and React Chatbot Kit library, integrating Accenture CORE DB and OpenAI API. This solution ensured seamless,
+        bidirectional communication while mitigating CSRF vulnerabilities and safeguarding data protection.</li>
+      </ul>
+      &nbsp;
+      <div>Client: British Telecom</div>
+      <ul style="list-style-type:disc">
+        <li>Led a team in executing comprehensive end-to-end test scenarios for the Voice product, identifying and reporting 12+ critical
+        business defects.</li>
+        <li>Automated test cases using CATS tool to streamline regression testing, significantly reducing testing time.</li>
+      </ul>
+      `,
 	},
 	{
 		title: "ML Intern",
 		company: "Knowledge Solutions India",
 		duration: "August 2014 - January 2016",
-		description:
-			"As ML intern, I build Models based on Linear Regression, KNN Algorithm, Decision Tree Algorithm, Random Forest Regression. Created Supervised Machine Learning Model which predicted Chance of Admit in university with 88.3% accuracy.",
+		description: `<ul style="list-style-type:disc"><li>As ML intern, I build Models based on Linear Regression, KNN Algorithm, Decision Tree Algorithm,
+      Random Forest Regression. Created Supervised Machine Learning Model which predicted Chance of Admit in university with 88.3&#37; 
+      accuracy.</li></ul>`,
 	},
 ];
 
@@ -235,9 +262,9 @@ export const SOCIAL_MEDIA_LINKS = [
 	// 	href: "https://x.com/",
 	// 	icon: <FaXTwitter fontSize={25} className="hover:opacity-80" />,
 	// },
-  {
+	{
 		href: "mailto:tirthpatel23t@gmail.com",
-		icon: <SiGmail  fontSize={25} className="hover:opacity-80" />,
+		icon: <SiGmail fontSize={25} className="hover:opacity-80" />,
 	},
 	{
 		href: "https://github.com/tirth23",
