@@ -228,7 +228,7 @@ export const EXPERIENCES = [
 	{
 		title: "ML Intern",
 		company: "Knowledge Solutions India",
-		duration: "August 2014 - January 2016",
+		duration: "June 2020 - July 2020",
 		description: `<ul style="list-style-type:disc"><li>As ML intern, I build Models based on Linear Regression, KNN Algorithm, Decision Tree Algorithm,
       Random Forest Regression. Created Supervised Machine Learning Model which predicted Chance of Admit in university with 88.3&#37; 
       accuracy.</li></ul>`,
