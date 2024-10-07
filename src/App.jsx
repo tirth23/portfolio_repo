@@ -1,10 +1,7 @@
 import React, { lazy, Suspense } from "react";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
-// import Projects from "./components/Projects";
-
-const Projects = lazy(() => import("./components/Projects"));
-
+import Projects from "./components/Projects";
 import Bio from "./components/Bio";
 import Skills from "./components/Skills";
 import WorkExperience from "./components/WorkExperience";
@@ -25,10 +22,7 @@ const App = () => {
           <Bio />
           <WorkExperience />
 					<Skills />
-          <Suspense fallback={<div>Loading...</div>}>
-            <Projects />
-          </Suspense>
-          {/* <Projects /> */}
+          <Projects />
 					<EducationSection />
 					<ContactForm />
 					<Footer />
